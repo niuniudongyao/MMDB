@@ -115,7 +115,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D716CB4C1C23A58700D89B5C /* Build configuration list for PBXNativeTarget "MMDB-iOS" */;
 			buildPhases = (
-				366F5FDD1F05152C00DE3883 /* ShellScript */,
 				D716CB421C23A58700D89B5C /* Sources */,
 				D716CB431C23A58700D89B5C /* Frameworks */,
 				D716CB441C23A58700D89B5C /* Headers */,
@@ -174,22 +173,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		366F5FDD1F05152C00DE3883 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ ! -f $SRCROOT/Sources/libmaxminddb/GeoLite2-Country.mmdb ] || [ $CONFIGURATION == \"Release\" ]; then\n  $SRCROOT/update_database.sh\nfi\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D716CB421C23A58700D89B5C /* Sources */ = {
@@ -331,7 +314,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lexrus.MMDB-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.MMDB;
 				PRODUCT_NAME = MMDB;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -360,7 +343,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lexrus.MMDB-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.MMDB;
 				PRODUCT_NAME = MMDB;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
